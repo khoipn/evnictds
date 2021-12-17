@@ -286,17 +286,16 @@ body {
 }
 .loginContent .inputAccount .form-label {
   left: 54px;
-  top: 7px;
+  top: 13px;
   font-weight: 400;
   transition: 0.25s all;
+  padding-top: 0;
 }
 
-.form-outline .form-control:focus ~ .form-label {
-  font-size: 12px;
-  color: #000;
-  top: 13px;
+.form-outline .form-control~.form-notch div{
   border: none;
 }
+
 .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
   border: none !important;
 }
@@ -307,13 +306,17 @@ body {
 .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
   border: none !important;
 }
-
-.form-outline .form-control:focus ~ .form-label {
+.form-outline .form-control.active~.form-label, .form-outline .form-control:focus~.form-label{
+  transform: none;
+  font-size: 12px;
   color: #000;
+  top: 8px;
+  border: none;
 }
 #form1 {
   padding-left: 54px;
   height: 100%;
+  padding-top: 22px;
 }
 
 .loginContent .btn {
