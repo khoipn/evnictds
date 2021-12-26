@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- Google Fonts Icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../MDB5/css/mdb.min.css" />
+    <link rel="stylesheet" href="../MDB5/css/modules/select.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- evnict css -->
+    <link rel="stylesheet" href="../MDB5/css/evnict.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/worksign.css" />
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="header">
+        <div class="formSearch input-group">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Tìm kiếm..." class="form-control" />
+        </div>
+        <nav>
+          <ul class="navMenu">
+            <a href="./index.html" class="nav-item"
+              ><i class="fas fa-home"></i
+            ></a>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="nav-item"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+                >Thư viện <span><i class="fas fa-caret-down"></i></span
+              ></a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Thư viện sách</a>
+                <a class="dropdown-item" href="#">Thư viện tài liệu</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="#"
+                class="nav-item active"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+                >Tiện ích <span><i class="fas fa-caret-down"></i></span
+              ></a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Lịch công tác tuần</a>
+                <div class="dropdown-divider"></div>
+                <p>ĐĂNG KÝ</p>
+                <a class="dropdown-item" href="#">Đăng ký văn phòng phẩm</a>
+                <a class="dropdown-item" href="./worksign.html"
+                  >Đăng ký công tác</a
+                >
+                <a class="dropdown-item" href="#">Đăng ký thiết bị văn phòng</a>
+                <a class="dropdown-item" href="#"
+                  >Đăng ký nghỉ phép và nghỉ chế độ</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Danh bạ</a>
+                <a class="dropdown-item" href="#">Diễn đàn</a>
+                <a class="dropdown-item" href="#">Khảo sát trực tuyến</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="#"
+                class="nav-item"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+                >DOffice <span><i class="fas fa-caret-down"></i></span
+              ></a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Văn phòng phẩm</a>
+                <a class="dropdown-item" href="#">Văn phòng đặc biệt</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="nav-item"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+                >Hỗ trợ <span><i class="fas fa-caret-down"></i></span
+              ></a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Chính sách hỗ trợ</a>
+                <a class="dropdown-item" href="#">Hỗ trợ thất nghiệp</a>
+              </div>
+            </div>
+          </ul>
+        </nav>
+        <a class="btn" href="#">Ban an toàn</a>
+        <hr class="divider" />
+        <a class="rightHeader" href="#">
+          <span class="material-icons-sharp righticon"> all_inbox </span>
+        </a>
+        <a class="rightHeader" href="#">
+          <span class="material-icons-sharp righticon"> notifications </span>
+        </a>
+        <img src="./image/avatar.png" alt="" class="avatar" />
+        <a class="infoUser" href="#">
+          <p class="nameUser">EOff.AT.NVIEN</p>
+          <p class="position">Nhân viên</p>
+        </a>
+        <hr class="divider end" />
+        <a href="#" class="settingIcon"><i class="fas fa-cog"></i></a>
+      </div>
+      <div class="sidebar">
+        <div class="headerSidebar">
+          <img src="./image/logoEVN.svg" alt="" />
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu1 menu">
+          <p class="menu_p">Đăng kí công tác trong nước</p>
+          <ul>
+            <a href="" class="active">
+              <span class="material-icons icon1"> add_circle </span>Tạo mới
+              phiếu đề nghị</a
+            ><a href=""
+              ><span type="button" class="material-icons"> view_quilt </span
+              >Phiếu đã tạo</a
+            ><a href=""
+              ><span type="button" class="material-icons"> fact_check </span
+              >Phiếu chờ duyệt <span class="number1">1</span></a
+            >
+            <a href="">
+              <span class="material-icons icon2"> done_all </span>Phiếu đã duyệt
+              <span class="number2">2</span></a
+            >
+            <a href="">
+              <span class="material-icons icon3"> warning </span>Yêu cầu hiệu
+              chỉnh <span class="number3">9</span></a
+            >
+            <hr />
+            <a href="">
+              <span type="button" class="material-icons"> search </span>Tìm
+              phiếu đề nghị</a
+            >
+          </ul>
+        </div>
+        <div class="menu2 menu">
+          <p class="menu_p">Tài liệu hướng dẫn</p>
+          <ul>
+            <a href="">
+              <span type="button" class="material-icons"> map </span>Giấy đi
+              đường</a
+            >
+            <a href="" class="border">
+              <span type="button" class="material-icons"> help </span>Tài liệu
+              hướng dẫn sử dụng</a
+            >
+          </ul>
+        </div>
+      </div>
+      <div class="body body1">
+        <div class="schedule schedule1">
+          <div class="headerSchedule">
+            <div class="dangKiCongTac">
+              <p>Đăng ký công tác trong nước</p>
+              <div class="right">
+                <button class="btn_gui">GỬI KÝ</button>
+                <button class="btn_luu">LƯU TẠM</button>
+              </div>
+            </div>
+            <div class="phuongTien">
+              <p class="radio">Loại phương tiện:</p>
+              <div class="form-check radioGroup">
+                <div class="form-check radio">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Ô tô / thẻ Taxi
+                  </label>
+                </div>
+                <div class="form-check radio">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Máy bay
+                  </label>
+                </div>
+                <div class="form-check radio">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Phương tiện khác
+                  </label>
+                </div>
+                <div class="form-check radio">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Không yêu cầu phương tiện
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="thongTinChung">
+              <p class="title">Thông tin chung</p>
+              <div class="line1">
+                <div class="item1">
+                  <p>Người đăng kí:</p>
+                  <p>eoff.at.nvien</p>
+                </div>
+                <div class="item2">
+                  <p>Ban/Phòng</p>
+                  <p>Ban an toàn</p>
+                </div>
+                <div class="leftSelect">
+                  <select class="select">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                  </select>
+                  <label class="form-label select-label"
+                    >Lãnh đạo Ban/ Phòng duyệt *</label
+                  >
+                </div>
+                <select class="select">
+                  <option value="1">Bùi Công Luận</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="4">Four</option>
+                  <option value="5">Five</option>
+                </select>
+                <label class="form-label select-label"
+                  >Lãnh đạo Văn phòng duyệt *</label
+                >
+              </div>
+              <div class="form-outline">
+                <textarea
+                  class="form-control"
+                  id="textAreaExample"
+                  rows="4"
+                ></textarea>
+                <label class="form-label" for="textAreaExample"
+                  >Chi tiết đăng ký * (Ví dụ: Căn cứ, lý do...)</label
+                >
+              </div>
+              <div class="item5">
+                <p>Đính kèm tài liệu:</p>
+                <label type="button" class="labelUpload"
+                  ><span class="material-icons"> file_upload </span> CHỌN TỆP
+                  <input type="file" />
+                </label>
+                <p>(PDF, DOCX... tối đa 5MB)</p>
+                <div class="leftSelect">
+                  <select class="select">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                  </select>
+                  <label class="form-label select-label">Số người đi</label>
+                </div>
+              </div>
+            </div>
+            <div class="thoiGian">
+              <p>Thời gian và địa điểm chuyến công tác</p>
+              <div class="line1">
+                <div
+                  class="form-outline datepicker"
+                  data-mdb-format="dd, mmm, yyyy"
+                >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleDatepicker4"
+                    placeholder="dd, mmm, yyyy"
+                  />
+                  <label for="exampleDatepicker4" class="form-label"
+                    >Từ ngày *
+                    <span type="button" class="material-icons">
+                      date_range
+                    </span></label
+                  >
+                </div>
+                <div
+                  class="form-outline datepicker1"
+                  data-mdb-format="dd, mmm, yyyy"
+                >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleDatepicker4"
+                    placeholder="dd, mmm, yyyy"
+                  />
+                  <label for="exampleDatepicker4" class="form-label"
+                    >Đến ngày *
+                    <span type="button" class="material-icons">
+                      date_range
+                    </span></label
+                  >
+                </div>
+                <div class="form-outline form3">
+                  <input type="text" id="form12" class="form-control" />
+                  <label class="form-label" for="form12"
+                    >Địa điểm công tác *</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="thanhPhanCongTac">
+              <div class="line1">
+                <p>Thành phần công tác (người của cơ quan EVN)</p>
+                <a href=""
+                  ><span type="button" class="material-icons">
+                    add_box
+                  </span></a
+                >
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 5%" scope="col">#</th>
+                    <th style="width: 25%" scope="col">Họ tên</th>
+                    <th scope="col">Chức vụ</th>
+                    <th scope="col">Ban</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="input"
+                        placeholder="Nhập họ tên CBCNV hoặc toài khoản
+                      "
+                      />
+                    </td>
+                    <td class="theP">UX Designer</td>
+                    <td class="theP">Thiết kế UI/UX</td>
+                    <td class="theP">0989-900-009</td>
+                    <td style="text-align: right">
+                      <a href=""
+                        ><span type="button" class="material-icons">
+                          remove_circle_outline
+                        </span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="input"
+                        placeholder="Nhập họ tên CBCNV hoặc toài khoản
+                      "
+                      />
+                    </td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td>---</td>
+                    <td style="text-align: right">
+                      <a href=""
+                        ><span type="button" class="material-icons">
+                          remove_circle_outline
+                        </span></a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="thanhPhanKhac">
+              <p>Thành phần khác</p>
+              <div class="form-outline">
+                <textarea
+                  class="form-control"
+                  id="textAreaExample"
+                  rows="4"
+                ></textarea>
+                <label class="form-label" for="textAreaExample"
+                  >Điền đầy đủ: Họ tên - Chức vụ - Ban - Số điện thoại</label
+                >
+              </div>
+            </div>
+            <div class="chiTietCongTac">
+              <div class="line1">
+                <p>Chi tiết lịch trình công tác</p>
+                <span type="button" class="material-icons"> add_box </span>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 30%" scope="col">Điểm đi</th>
+                    <th style="width: 30%" scope="col">Điểm đến</th>
+                    <th scope="col">Thời gian dự đi(dự kiến)</th>
+                    <th scope="col">Thời gian về(dự kiến)</th>
+                    <th style="width: 5%"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="sizingRow">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="input"
+                        placeholder="Điạ chỉ điểm đến
+                      "
+                      />
+                    </td>
+                    <td class="sizingRow">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="input"
+                        placeholder="Điạ chỉ điểm đến
+                        "
+                      />
+                    </td>
+                    <td class="sizingRow">
+                      <p style="display: flex">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="input"
+                          placeholder="dd/mm/yyyy hh:mm"
+                        />
+                        <span class="material-icons"> schedule </span>
+                      </p>
+                    </td>
+                    <td class="sizingRow">
+                      <p style="display: flex">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="input"
+                          placeholder="dd/mm/yyyy hh:mm"
+                        />
+                        <span class="material-icons"> schedule </span>
+                      </p>
+                    </td>
+                    <td style="text-align: right">
+                      <a href=""
+                        ><span type="button" class="material-icons">
+                          <span style="margin-right: 0" class="material-icons">
+                            remove_circle_outline
+                          </span>
+                        </span></a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="line4">
+                <p>Sử dụng xe/thẻ taxi:</p>
+                <div class="form-check marginRight">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Xe ô tô cơ quan
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Xe taxi
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="../MDB5/js/mdb.min.js"></script> -->
+    <script src="../MDB5/js/modules/select.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+    ></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
