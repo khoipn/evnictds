@@ -219,7 +219,7 @@ nav .active i {
 .sidebar {
   background-color: #e5e5e5;
   width: 240px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
