@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- Treeview
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css"> -->
+    <!-- Google Fonts Icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../MDB5/css/mdb.min.css" />
+    <!-- evnict css -->
+    <link rel="stylesheet" href="../MDB5/css/evnict.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="arrowBack"
+        ><span class="material-icons"> arrow_back </span></a
+      >
+      <h5 class="headTitle">Tiếp nhận yêu cầu</h5>
+      <a href="#" class="btn cancelBtn">Hủy</a>
+      <a href="#" class="btn saveBtn">Lưu</a>
+      <hr class="divider" />
+      <div class="nameBranch">
+        <select>
+          <option value="1">PD0600-Công ty Điện lực Thanh Trì</option>
+          <option value="2">PD0600-Công ty Điện lực ABC</option>
+          <option value="3">PD0600-Công ty Điện lực DEF</option>
+        </select>
+        <span class="material-icons dropDownIcon"> arrow_drop_down </span>
+      </div>
+
+      <a class="rightHeader" href="#">
+        <span class="material-icons-sharp righticon"> all_inbox </span>
+      </a>
+      <a class="rightHeader" href="#">
+        <span class="material-icons-sharp righticon"> notifications </span>
+      </a>
+      <img src="./image/avatar.png" alt="" class="avatar" />
+      <a class="infoUser" href="#">
+        <p class="nameUser">EOff.AT.NVIEN</p>
+        <p class="position">Nhân viên</p>
+      </a>
+      <hr class="divider end" />
+      <a href="#" class="settingIcon"
+        ><span class="material-icons"> settings </span></a
+      >
+    </div>
+    <div class="sidebar">
+      <div class="headerSidebar">
+        <img src="./image/logoEVN.svg" alt="" />
+        <h4 class="sideHeadTitle">CMIS 3.0</h4>
+        <a href="#"><span class="material-icons"> menu </span></a>
+      </div>
+      <div class="searchMenu">
+        <input type="text" placeholder="Tìm kiếm" />
+        <span class="material-icons"> search </span>
+      </div>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Dịch vụ điện</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Dịch vụ điện điện tử</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Quản lý hợp đồng</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Quản lý thiết bị Đo đếm</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Ghi chỉ số và lập hoá đơn</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Quản lý thu và theo dõi nợ</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Quản lý tổn thất</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Tiện ích</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Báo cáo</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="myUL" class="treeMenu">
+        <li>
+          <span class="caret">Danh mục</span>
+          <ul class="nested lv1">
+            <li class="lineMenu">
+              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Dịch vụ Hợp đồng điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Ký lại hồ sơ giấy tờ</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Chuyển đổi HĐ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Tiền tiếp nhận</li>
+                <li class="lastNode">Cấp điện</li>
+              </ul>
+            </li>
+            <li class="lineMenu">
+              <span class="caret">Nội bộ điện tử</span>
+              <ul class="nested lv2">
+                <li class="lastLv">Ký hồ sơ điện lực</li>
+                <li class="lastLv">Tra cứu TTHS giấy tờ</li>
+                <li class="lastLv">Ký hồ sơ giấy tờ</li>
+                <li class="lastNode">Trình ký HS giấy tờ</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="body">
+      <div class="infoReceive shadow-2">
+        <div class="stepBar">
+          <div class="stepReceive">
+            <div class="stepItem">
+              <p class="stepNumber active">1</p>
+              <p class="stepTitle">Thông tin chung</p>
+            </div>
+            <hr class="stepLine" />
+            <div class="stepItem">
+              <p class="stepNumber">2</p>
+              <p class="stepTitle">Điểm đo</p>
+            </div>
+            <hr class="stepLine" />
+            <div class="stepItem">
+              <p class="stepNumber">3</p>
+              <p class="stepTitle">Thông tin khác</p>
+            </div>
+            <hr class="stepLine" />
+            <div class="stepItem">
+              <p class="stepNumber">4</p>
+              <p class="stepTitle">Liên hệ</p>
+            </div>
+            <hr class="stepLine" />
+            <div class="stepItem">
+              <p class="stepNumber">5</p>
+              <p class="stepTitle">Kết thúc</p>
+            </div>
+          </div>
+          <div class="btnStep">
+            <a href="#" class="btn prevStep"
+              ><span class="material-icons"> arrow_back_ios </span></a
+            >
+            <a href="#" class="btn nextStep"
+              >Tiếp tục<span class="material-icons">
+                arrow_forward_ios
+              </span></a
+            >
+          </div>
+        </div>
+        <h6>Thông tin bộ phận - Nhân viên</h6>
+        <div class="inputGroup">
+          <select class="select">
+            <option value="1">GDKH - Bộ phận giao dịch khách hàng</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label class="form-label select-label">Nhân viên</label>
+          <select class="select">
+            <option value="1">074057 - Trần Thị Lệ Dung</option>
+            <option value="2">Two</option>
+          </select>
+          <label class="form-label select-label">Nhân viên</label>
+          <div class="form-outline datepicker">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleDatepicker11"
+              value="10/12/2021"
+            />
+            <label for="exampleDatepicker11" class="form-label"
+              >Ngày tiếp nhận</label
+            >
+          </div>
+        </div>
+        <h6>Thông tin tiếp nhận</h6>
+        <div class="inputGroup receiveInput">
+          <div class="form-outline customInput">
+            <input
+              type="text"
+              id="typeText"
+              class="form-control"
+              disabled
+              value="GK9073008118"
+            />
+            <label class="form-label" for="typeText">Mã yêu cầu</label>
+          </div>
+          <div class="form-outline datepicker">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleDatepicker11"
+              value="10/12/2021"
+            />
+            <label for="exampleDatepicker11" class="form-label"
+              >Ngày tiếp nhận</label
+            >
+          </div>
+          <div class="form-outline customInput">
+            <input
+              type="text"
+              id="typeText"
+              class="form-control"
+              value="Nguyễn Ngọc Bích"
+            />
+            <label class="form-label" for="typeText">Người yêu cầu</label>
+          </div>
+        </div>
+        <div class="inputGroup receiveInput">
+          <select class="select">
+            <option value="1">Ông</option>
+            <option value="2">Bà</option>
+          </select>
+          <label class="form-label select-label">Xưng hô</label>
+          <div class="form-outline customInput">
+            <input
+              type="text"
+              id="typeText"
+              class="form-control"
+              value="Nguyễn Ngọc Bích"
+            />
+            <label class="form-label" for="typeText">Tên khách hàng</label>
+          </div>
+          <select class="select">
+            <option value="1">01 - Đội Quản lý điện</option>
+            <option value="2">Bà</option>
+          </select>
+          <label class="form-label select-label">Tổ</label>
+        </div>
+        <div class="inputGroup receiveInput">
+          <div class="form-outline customInput">
+            <input
+              type="text"
+              id="typeText"
+              class="form-control"
+              value="Số nhà"
+            />
+            <label class="form-label" for="typeText">Địa chỉ</label>
+          </div>
+          <select class="select">
+            <option value="1">Xã Mai Đình, huyện Thanh Trì, Hà Nội</option>
+            <option value="2">Two</option>
+          </select>
+          <label class="form-label select-label">Phường xã</label>
+          <select class="select">
+            <option value="1">0101Chị 600427 - Xã Mai Đình</option>
+            <option value="2">Two</option>
+          </select>
+          <label class="form-label select-label">Địa chính</label>
+        </div>
+      </div>
+      <div class="listProfile shadow-2">
+        <div class="headProfile">
+          <h6 class="titleProfile">Danh sách hồ sơ, giấy tờ</h6>
+          <div class="inputSearch">
+            <input
+              type="text"
+              class="searchProfile"
+              placeholder="Tìm kiếm hồ sơ giấy tờ"
+            /><span class="material-icons iSearchProfile"> search </span>
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <th scope="col">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Còn thiếu
+                  </label>
+                </div>
+              </th>
+              <th scope="col">Có File</th>
+              <th scope="col">Tên giấy tờ</th>
+              <th scope="col">Số giấy tờ</th>
+              <th scope="col">Ngày cấp</th>
+              <th scope="col">Thời hạn đến</th>
+              <th scope="col">Nơi cấp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"><span class="material-icons violetColor"> upload </span></a>
+              </td>
+              <td>Giấy chứng nhận tạm trú</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"><span class="material-icons violetColor"> upload </span></a>
+              </td>
+              <td>Hộ khẩu thường trú</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"><span class="material-icons violetColor"> upload </span></a>
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <div class="pageSize">
+            <p>Hiển thị </p>
+            <div class="pageSelect">
+              <select>
+                <option value="30">30 kết quả</option>
+                <option value="40">40 kết quả</option>
+                <option value="50">50 kết quả</option>
+              </select>
+              <span class="material-icons dropDownIcon"> arrow_drop_down </span>
+            </div>
+            <p>/ trang</p>
+          </div>
+          <div class="pageIndex">
+            <p>Đi đến trang</p>
+            <div class="pageSelect">
+              <select>
+                <option value="10">10</option>
+                <option value="20">20</option>
+              </select>
+              <span class="material-icons dropDownIcon"> arrow_drop_down </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="../MDB5/js/mdb.min.js"></script>
+    <!-- Treeview -->
+    <!-- <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script> -->
+    <!-- Custom scripts -->
+    <script>
+      var toggler = document.getElementsByClassName("caret");
+      var i;
+
+      for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function () {
+          this.parentElement
+            .querySelector(".nested")
+            .classList.toggle("active");
+          this.classList.toggle("caret-down");
+        });
+      }
+    </script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
