@@ -355,6 +355,16 @@ ul {
   padding-left: 35px;
 }
 
+.activeMenu span {
+  z-index: -1;
+  position: absolute;
+  width: 240px;
+  height: 33px;
+  background: #f3f1ff;
+  left: -70px;
+  top: 0;
+}
+
 /* Body */
 .body {
   margin-left: 266px;
@@ -364,12 +374,13 @@ ul {
 .content {
   background-color: #fff;
   border-radius: 4px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   padding-bottom: 5px;
 }
 .stepBar {
   display: flex;
   justify-content: space-between;
+  padding: 16px 23px;
 }
 .stepReceive {
   display: flex;
@@ -427,6 +438,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin-top: 36px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 .nameItem {
   display: flex;
@@ -448,7 +461,7 @@ ul {
   width: 26px;
   height: 1px;
   transform: rotate(90deg);
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid #858585;
 }
 .settings span {
   color: #7b7b7b;
@@ -475,7 +488,9 @@ ul {
 .upload {
   margin-top: 28px;
   width: 60%;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 .formGroup {
@@ -486,6 +501,7 @@ ul {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  margin-left: 23px;
 }
 .signName {
   width: 65%;
@@ -498,13 +514,14 @@ ul {
   right: 0;
 }
 .numberDecide {
-  width: 39%;
+  width: 35%;
+  margin-right: 23px;
 }
 
 .previewContent {
   display: flex;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 20px;
 }
 .previewContent h4 {
   border: 1px solid #d9d9d9;
@@ -520,13 +537,13 @@ ul {
   margin: 0 20px;
   width: 300px;
 }
-.titleLine{
-  width: 34%;
+.titleLine {
+  width: calc((100% - 300px) / 2);
   height: 1px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #858585;
 }
 
-.docContent{
+.docContent {
   display: block;
   width: 100%;
   text-align: center;
