@@ -31,37 +31,42 @@
   </head>
   <body>
     <div class="header">
-      <a href="#" class="arrowBack"
+      <div class="leftHead">
+        <a href="#" class="arrowBack"
         ><span class="material-icons"> arrow_back </span></a
       >
       <h5 class="headTitle">Tiếp nhận yêu cầu</h5>
       <a href="#" class="btn cancelBtn">Hủy</a>
       <a href="#" class="btn saveBtn">Lưu</a>
-      <hr class="divider" />
-      <div class="nameBranch">
-        <select>
-          <option value="1">PD0600-Công ty Điện lực Thanh Trì</option>
-          <option value="2">PD0600-Công ty Điện lực ABC</option>
-          <option value="3">PD0600-Công ty Điện lực DEF</option>
-        </select>
-        <span class="material-icons dropDownIcon"> arrow_drop_down </span>
       </div>
+      
+      <hr class="divider" />
+      <div class="rightHead">
+        <div class="nameBranch">
+          <select>
+            <option value="1">PD0600-Công ty Điện lực Thanh Trì</option>
+            <option value="2">PD0600-Công ty Điện lực ABC</option>
+            <option value="3">PD0600-Công ty Điện lực DEF</option>
+          </select>
+          <span class="material-icons dropDownIcon"> arrow_drop_down </span>
+        </div>
 
-      <a class="rightHeader" href="#">
-        <span class="material-icons-sharp righticon"> all_inbox </span>
-      </a>
-      <a class="rightHeader" href="#">
-        <span class="material-icons-sharp righticon"> notifications </span>
-      </a>
-      <img src="./image/avatar.png" alt="" class="avatar" />
-      <a class="infoUser" href="#">
-        <p class="nameUser">EOff.AT.NVIEN</p>
-        <p class="position">Nhân viên</p>
-      </a>
-      <hr class="divider end" />
-      <a href="#" class="settingIcon"
-        ><span class="material-icons"> settings </span></a
-      >
+        <a class="rightHeader" href="#">
+          <span class="material-icons-sharp righticon"> all_inbox </span>
+        </a>
+        <a class="rightHeader" href="#">
+          <span class="material-icons-sharp righticon"> notifications </span>
+        </a>
+        <img src="./image/avatar.png" alt="" class="avatar" />
+        <a class="infoUser" href="#">
+          <p class="nameUser">EOff.AT.NVIEN</p>
+          <p class="position">Nhân viên</p>
+        </a>
+        <hr class="divider end" />
+        <a href="#" class="settingIcon"
+          ><span class="material-icons"> settings </span></a
+        >
+      </div>
     </div>
     <div class="sidebar">
       <div class="headerSidebar">
@@ -119,11 +124,13 @@
       </ul>
       <ul id="myUL" class="treeMenu">
         <li>
-          <span class="caret">Dịch vụ điện điện tử</span>
-          <ul class="nested lv1">
+          <span class="caret caret-down">Dịch vụ điện điện tử</span>
+          <ul class="nested lv1 active">
             <li class="lineMenu">
-              <span class="caret first"> Dịch vụ Cấp điện điện tử</span>
-              <ul class="nested lv2">
+              <span class="caret first caret-down">
+                Dịch vụ Cấp điện điện tử</span
+              >
+              <ul class="nested lv2 active">
                 <li class="lastLv">Tiền tiếp nhận</li>
                 <li class="lastNode">Cấp điện</li>
               </ul>
@@ -150,8 +157,8 @@
               </ul>
             </li>
             <li class="lineMenu">
-              <span class="caret">Nội bộ điện tử</span>
-              <ul class="nested lv2">
+              <span class="caret caret-down">Nội bộ điện tử</span>
+              <ul class="nested lv2 active">
                 <li class="lastLv">Ký hồ sơ điện lực</li>
                 <li class="lastLv">Tra cứu TTHS giấy tờ</li>
                 <li class="lastLv">Ký hồ sơ giấy tờ</li>
@@ -728,7 +735,9 @@
                 </div>
               </td>
               <td>
-                <a href="#"><span class="material-icons violetColor"> upload </span></a>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
               </td>
               <td>Giấy chứng nhận tạm trú</td>
               <td>12345860707</td>
@@ -762,7 +771,9 @@
                 </div>
               </td>
               <td>
-                <a href="#"><span class="material-icons violetColor"> upload </span></a>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
               </td>
               <td>Hộ khẩu thường trú</td>
               <td>12345860707</td>
@@ -796,7 +807,261 @@
                 </div>
               </td>
               <td>
-                <a href="#"><span class="material-icons violetColor"> upload </span></a>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
+              </td>
+              <td>Hợp đồng thuê nhà, đất</td>
+              <td>12345860707</td>
+              <td>12/12/2021</td>
+              <td>12/12/2021</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </th>
+              <td>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+                </div>
+              </td>
+              <td>
+                <a href="#"
+                  ><span class="material-icons violetColor"> upload </span></a
+                >
               </td>
               <td>Hợp đồng thuê nhà, đất</td>
               <td>12345860707</td>
@@ -808,7 +1073,7 @@
         </table>
         <div class="pagination">
           <div class="pageSize">
-            <p>Hiển thị </p>
+            <p>Hiển thị</p>
             <div class="pageSelect">
               <select>
                 <option value="30">30 kết quả</option>
